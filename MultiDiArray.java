@@ -37,7 +37,7 @@ public final class MultiDiArray {
      *
      */
     public static String[][] generateStudentMarks(
-            String[] studentsArr, String[] assignmentsArr) {
+            final String[] studentsArr, final String[] assignmentsArr) {
         // Create a random object
         final Random RANDOM = new Random();
         final int TEN = 10;
@@ -70,7 +70,7 @@ public final class MultiDiArray {
      *
      */
 
-    public static String arrayToCsvString(String[][] arr) {
+    public static String arrayToCsvString(final String[][] arr) {
         // function for converting to a csv (just in case we need again)
         return Arrays.stream(arr)
             .map(row -> String.join(",", row))
